@@ -1,0 +1,34 @@
+- var urlMain ='landing page'
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title= "UIKIT"
+        link(href='../../src/layout/styles/style.css')
+    body
+        nav.navbar-login
+            a.navbar-brand(href=urlMain)
+                img(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
+            div.navbar-content
+                ul.navbar-nav
+                    li.navbar-nav__item О нас
+                    li(class=['navbar-nav__item','dropdown'])
+                        a(class='navbar-nav__a', id='navbarDropdown1' role="button") Услуги
+                        ul.navbar-dropdown
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+                    li.navbar-nav__item Вакансии
+                    li.navbar-nav__item Новости
+                    li(class=['navbar-nav__item','dropdown'])
+                        a(class='navbar-nav__a', id='navbarDropdown2' role="button") Соглашения
+                        ul.navbar-dropdown
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+                            li.navbar-nav__li ITEM
+            div.navbar-button
+                button(class=['button','navbar-button__button1']) Войти
+                button(class=['button','navbar-button__button2']) Зарегистрироваться
+
+
