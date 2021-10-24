@@ -1,0 +1,77 @@
+@import "style.scss";
+
+.conteiner-content{
+  display: flex;
+}
+.sqare {
+  height: 70px;
+  width: 70px;
+  border-radius: 6px;
+}
+.Rectangle{
+  display: flex;
+}
+.sqare:hover{
+  -webkit-animation: sqare 0.3s linear infinite both;
+  animation: sqare 0.3s linear infinite both;
+}
+@-webkit-keyframes sqare {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@keyframes sqare {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+.Dark-Shade-100{background-color: $Dark-Shade-100}
+.Dark-Shade-75{background-color: $Dark-Shade-75}
+.Dark-Shade-50{background-color: $Dark-Shade-50}
+.Dark-Shade-25{background-color: $Dark-Shade-25}
+.Dark-Shade-5{background-color: $Dark-Shade-5}
+.Purple{background-color: $Purple}
+.Green{background-color: $Green}
