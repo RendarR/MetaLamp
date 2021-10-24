@@ -1,17 +1,3 @@
-.btn-void, .btn {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  appearance: none;
-  align-items: center;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -81,22 +67,4 @@ p {
   line-height: 24px;
 }
 
-.btn {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  border: 0;
-  color: #FFFFFF;
-  width: 100%;
-}
-
-.btn-void {
-  border-radius: 22px;
-  color: #BC9CFF;
-  background-color: #FFFFFF;
-  border: 3px solid #BC9CFF;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100px;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=Settings.css.map */

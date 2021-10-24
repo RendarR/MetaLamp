@@ -1,7 +1,16 @@
-@import "style.scss";
+@import "Settings.scss";
+// styles for page Colors-Type
+.Dark-Shade-100{background-color: $Dark-Shade-100}
+.Dark-Shade-75{background-color: $Dark-Shade-75}
+.Dark-Shade-50{background-color: $Dark-Shade-50}
+.Dark-Shade-25{background-color: $Dark-Shade-25}
+.Dark-Shade-5{background-color: $Dark-Shade-5}
+.Purple{background-color: $Purple}
+.Green{background-color: $Green}
 
 .conteiner-content{
   display: flex;
+  padding: 145px calc(50% - 650px);
 }
 .sqare {
   height: 70px;
@@ -10,10 +19,22 @@
 }
 .Rectangle{
   display: flex;
+  padding-bottom: 20px;
+  align-items:center
+}
+.Rectangle-text{
+  padding-bottom: 50px;
+}
+.text-rectangle{
+  align-content: center;
+  padding-left: 40px;
 }
 .sqare:hover{
   -webkit-animation: sqare 0.3s linear infinite both;
   animation: sqare 0.3s linear infinite both;
+}
+.conteiner-content-text{
+  padding-left: 435px;
 }
 @-webkit-keyframes sqare {
   0% {
@@ -68,10 +89,3 @@
   }
 }
 
-.Dark-Shade-100{background-color: $Dark-Shade-100}
-.Dark-Shade-75{background-color: $Dark-Shade-75}
-.Dark-Shade-50{background-color: $Dark-Shade-50}
-.Dark-Shade-25{background-color: $Dark-Shade-25}
-.Dark-Shade-5{background-color: $Dark-Shade-5}
-.Purple{background-color: $Purple}
-.Green{background-color: $Green}

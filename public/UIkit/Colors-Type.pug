@@ -1,51 +1,59 @@
 html(lang="ru")
     head
         meta(charset="utf-8")
-        title= "UIKIT"
+        title= "Colors&Type"
         link(rel='stylesheet', href='../../src/layout/styles/Colors-Type.css')
+        link(href='', rel='stylesheet')
     body
         div.conteiner
-            ul.conteiner-content
-                li.conteiner-content-colors
+            div.conteiner-content
+                div.conteiner-content-colors
                     ul.colors
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Dark-Shade-100'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Dark Shade 100%
+                                h2 Dark Shade 100%
                                 p.text-rectangle2 #1F2041
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Dark-Shade-75'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Dark Shade 75%
+                                h2 Dark Shade 75%
                                 p.text-rectangle2 #1F2041
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Dark-Shade-50'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Dark Shade 50%
+                                h2 Dark Shade 50%
                                 p.text-rectangle2 #1F2041
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Dark-Shade-25'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Dark Shade 25%
+                                h2 Dark Shade 25%
                                 p.text-rectangle2 #1F2041
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Dark-Shade-0'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Dark Shade 5%
+                                h2 Dark Shade 5%
                                 p.text-rectangle2 #1F2041
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Purple'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Purple
+                                h2 Purple
                                 p.text-rectangle2 #BC9CFF
                         li(class=['Rectangle'])
                             div(class=['sqare', 'Green'])
                             div.text-rectangle
-                                p.text-rectangle__text1 Green
-                            p.text-rectangle2 #6FCF97
-                li.conteiner-content-text
+                                h2 Green
+                                p.text-rectangle2 #6FCF97
+                div.conteiner-content-text
                     ul.text
-                            li(class=['h1', 'test-text']) This one is the sub-section or widget title
-                            li(class=['h2', 'Rectangle']) Next one is the item title inside widgets
-                            li(class=['h3', 'Rectangle']) This is a label or CTA text
-                            li(class=['body', 'Rectangle']) This is the body text which is used for most of the design, like paragraphs, lists, etc.
+                            li(class=['h1','Rectangle-text']) This one is the sub-section or widget title
+                            li(class=['h2','Rectangle-text']) Next one is the item title inside widgets
+                            li(class=['h3','Rectangle-text']) This is a label or CTA text
+                            p(class=['Rectangle-text']) This is the body text which is used for most
+                                | of the design, like paragraphs, lists, etc.
+                div.view-button
+                    button(class='btn', type='button') Зарегистрироваться
+                    |
+                    |
+                    button(class='btn-void', type='button') Войти
+
