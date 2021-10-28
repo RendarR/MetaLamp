@@ -21,10 +21,11 @@ $Quicksand: 'Quicksand', sans-serif;
   padding-bottom: 14px;
   appearance: none;
   align-items: center;
-
+  border: none;
 }
 
 body{
+  background: antiquewhite;
   font-family: $Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -56,6 +57,7 @@ li{
   line-height: 30px;
   margin: 0;
   color: $Dark-Shade-100;
+  cursor: pointer;
 }
 .h2{
   font-family: $Quicksand;
@@ -65,6 +67,7 @@ li{
   line-height: 24px;
   margin: 0;
   color: $Dark-Shade-100;
+  cursor: pointer;
 }
 .h3{
   font-family: $Montserrat;
@@ -75,39 +78,53 @@ li{
   text-transform: uppercase;
   margin: 0;
   color: $Dark-Shade-100;
+  cursor: pointer;
 }
-  .p{
+.p{
   margin: 0;
   font-family: $Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: $Dark-Shade-50;
+  transition: text-shadow .3s;
+  cursor: pointer;
 }
+  .p:hover{
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+  }
 
 .btn{
   @extend %for-btn;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  border: 0;
   color: #FFFFFF;
-  width: 100%;
+  border: 0;
+  width: 100%; //Ширина кнопки
 }
 .btn-void{
   @extend %for-btn;
   border-radius: 22px;
   color: $Purple;
   background-color: #FFFFFF;
-  border: 3px solid $Purple;
+  outline: 2px solid $Purple;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100px;
+  outline-offset: -2px;
 }
 .btn-void:hover{
   background-color: $Purple;
-  border: 3px solid rgba(255, 255, 255, 0.55);
+  outline: 2px solid rgba(255, 255, 255, 0.55);
   color: #FFFFFF;
 }
 .btn:hover{
   background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+  &-void{
+
+  }
+}
+.fas{
+  font-size: 11px;
+  padding-left: 3px;
 }

@@ -1,0 +1,39 @@
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title= "UIKIT"
+        link(rel='stylesheet', href='../../src/layout/styles/style.css')
+        script(src='https://kit.fontawesome.com/1f5bf3a5b9.js', crossorigin="anonymous")
+    body
+        nav.navbar
+            a.navbar-brand(href='')
+                img.navbar-brand__logo(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
+                div.h2 TOXIN
+            div.navbar-nav
+                a(class=['p','navbar-nav__item']) О нас
+                div(class=['p','navbar-nav__item','dropdown'])
+                    a(class=['p','navbar-nav__item'], id='navbarDropdown1' role="button") Услуги
+                        i(class=['fas','fa-chevron-down'])
+                    ul.navbar-nav-dropdown
+                        li(class=['p','navbar-nav__li']) ITEM
+                        li(class=['p','navbar-nav__li']) ITEM
+                        li(class=['p','navbar-nav__li']) ITEM
+                        li(class=['p','navbar-nav__li']) ITEM
+                a(class=['p','navbar-nav__item']) Вакансии
+                a(class=['p','navbar-nav__item']) Новости
+                div(class=['p','navbar-nav__item','dropdown',])
+                    a(class=['p','navbar-nav__item'], id='navbarDropdown2' role="button") Соглашения
+                        i(class=['fas','fa-chevron-down'])
+                    ul.navbar-nav-dropdown
+                        li(class=['p', 'navbar-nav__li']) ITEM
+                        li(class=['p', 'navbar-nav__li']) ITEM
+                        li(class=['p', 'navbar-nav__li']) ITEM
+                        li(class=['p', 'navbar-nav__li']) ITEM
+            div.navbar-button
+                button(class=['btn-void','navbar-button__button1']) Войти
+                button(class=['btn','navbar-button__button2']) Зарегистрироваться
+
+        bav.navbar
+
+
+

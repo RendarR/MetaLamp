@@ -9,3 +9,78 @@
 //  border-color: green;
 //}
 // Наследование
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  flex-wrap: wrap;
+  &-brand{
+    display: flex;
+    align-items:center;
+    padding: 15px 0;
+    margin: 0 auto 0 140px;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    &__logo{
+      padding-right: 12.5px;
+    }
+  }
+  &-nav{
+    display: flex;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    &-dropdown{
+      display: none;
+    }
+    &__item{
+      margin: 10px;
+      height: 18px;
+    }
+    &__a{
+      padding-right: 3px;
+    }
+  }
+  &-button{
+    align-items:center;
+    display: flex;
+    margin: 0 140px 0 0;
+    &__button1{
+      margin: 10px;
+      }
+    &__button2{
+      margin: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+//Animation for Brand (Появление)
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

@@ -10,9 +10,11 @@
   padding-bottom: 14px;
   appearance: none;
   align-items: center;
+  border: none;
 }
 
 body {
+  background: antiquewhite;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -49,6 +51,7 @@ li {
   line-height: 30px;
   margin: 0;
   color: #1F2041;
+  cursor: pointer;
 }
 
 .h2 {
@@ -59,6 +62,7 @@ li {
   line-height: 24px;
   margin: 0;
   color: #1F2041;
+  cursor: pointer;
 }
 
 .h3 {
@@ -70,6 +74,7 @@ li {
   text-transform: uppercase;
   margin: 0;
   color: #1F2041;
+  cursor: pointer;
 }
 
 .p {
@@ -79,13 +84,20 @@ li {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  transition: text-shadow 0.3s;
+  cursor: pointer;
+}
+
+.p:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }
 
 .btn {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
-  border: 0;
   color: #FFFFFF;
+  border: 0;
   width: 100%;
 }
 
@@ -93,20 +105,24 @@ li {
   border-radius: 22px;
   color: #BC9CFF;
   background-color: #FFFFFF;
-  border: 3px solid #BC9CFF;
+  outline: 2px solid #BC9CFF;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100px;
+  outline-offset: -2px;
 }
 
 .btn-void:hover {
   background-color: #BC9CFF;
-  border: 3px solid rgba(255, 255, 255, 0.55);
+  outline: 2px solid rgba(255, 255, 255, 0.55);
   color: #FFFFFF;
 }
 
 .btn:hover {
   background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+}
+.fas {
+  font-size: 11px;
+  padding-left: 3px;
 }
 
 .Dark-Shade-100 {
