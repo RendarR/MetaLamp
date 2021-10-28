@@ -48,7 +48,7 @@ li{
   list-style-type: none;
   margin: 0;
   padding: 0;}
-h1{
+.h1{
   font-family: $Quicksand;
   font-style: normal;
   font-weight: bold;
@@ -57,7 +57,7 @@ h1{
   margin: 0;
   color: $Dark-Shade-100;
 }
-h2{
+.h2{
   font-family: $Quicksand;
   font-style: normal;
   font-weight: bold;
@@ -66,7 +66,7 @@ h2{
   margin: 0;
   color: $Dark-Shade-100;
 }
-h3{
+.h3{
   font-family: $Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -76,7 +76,7 @@ h3{
   margin: 0;
   color: $Dark-Shade-100;
 }
-p{
+  .p{
   margin: 0;
   font-family: $Montserrat;
   font-style: normal;
@@ -102,5 +102,12 @@ p{
   padding-left: 20px;
   padding-right: 20px;
   width: 100px;
-
+}
+.btn-void:hover{
+  background-color: $Purple;
+  border: 3px solid rgba(255, 255, 255, 0.55);
+  color: #FFFFFF;
+}
+.btn:hover{
+  background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
 }

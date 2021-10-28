@@ -11,6 +11,7 @@
 .conteiner-content{
   display: flex;
   padding: 145px calc(50% - 650px);
+  justify-content: space-between;
 }
 .sqare {
   height: 70px;
@@ -32,9 +33,6 @@
 .sqare:hover{
   -webkit-animation: sqare 0.3s linear infinite both;
   animation: sqare 0.3s linear infinite both;
-}
-.conteiner-content-text{
-  padding-left: 435px;
 }
 @-webkit-keyframes sqare {
   0% {
