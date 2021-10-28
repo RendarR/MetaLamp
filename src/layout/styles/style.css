@@ -150,10 +150,15 @@ li {
 }
 .navbar-nav-dropdown {
   display: none;
+  flex-direction: column;
+  align-items: center;
 }
 .navbar-nav__item {
   margin: 10px;
   height: 18px;
+}
+.navbar-nav__item:hover .navbar-nav-dropdown {
+  display: flex;
 }
 .navbar-nav__a {
   padding-right: 3px;

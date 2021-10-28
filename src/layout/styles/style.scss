@@ -33,10 +33,17 @@
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     &-dropdown{
       display: none;
+      flex-direction: column;
+      align-items: center;
     }
     &__item{
       margin: 10px;
       height: 18px;
+    }
+    &__item:hover{
+      .navbar-nav-dropdown{
+        display: flex;
+      }
     }
     &__a{
       padding-right: 3px;
