@@ -8,7 +8,17 @@ $Purple: #BC9CFF;
 $Green: #6FCF97;
 $Montserrat: 'Montserrat', sans-serif;
 $Quicksand: 'Quicksand', sans-serif;
-
+%text-content{
+  margin: 0;
+  font-family: $Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $Dark-Shade-50;
+  transition: text-shadow .3s;
+  cursor: pointer;
+}
 %for-btn{
   font-family: $Montserrat;
   font-style: normal;
@@ -22,6 +32,9 @@ $Quicksand: 'Quicksand', sans-serif;
   appearance: none;
   align-items: center;
   border: none;
+}
+%input-gradient{
+  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 
 body{
@@ -81,19 +94,14 @@ li{
   cursor: pointer;
 }
 .p{
-  margin: 0;
-  font-family: $Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $Dark-Shade-50;
-  transition: text-shadow .3s;
-  cursor: pointer;
+  @extend %text-content;
 }
   .p:hover{
-    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+    text-shadow: 0 0 1px $Dark-Shade-50, 0 0 1px $Dark-Shade-50;
   }
+.text-content{
+  @extend %text-content;
+}
 
 .btn{
   @extend %for-btn;
@@ -127,4 +135,14 @@ li{
 .fas{
   font-size: 11px;
   padding-left: 3px;
+}
+.input{
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  @extend %text-content;
+  &-btn{
+
+  }
 }
