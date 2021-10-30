@@ -1,0 +1,51 @@
+%text-content{
+  margin: 0;
+  font-family: $Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $Dark-Shade-50;
+  transition: text-shadow .3s;
+  cursor: pointer;
+}
+.h1{
+  font-family: $Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  color: $Dark-Shade-100;
+  cursor: pointer;
+}
+.h2{
+  font-family: $Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0;
+  color: $Dark-Shade-100;
+  cursor: pointer;
+}
+.h3{
+  font-family: $Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin: 0;
+  color: $Dark-Shade-100;
+  cursor: pointer;
+}
+.p{
+  @extend %text-content;
+}
+.p:hover{
+  text-shadow: 0 0 1px $Dark-Shade-50, 0 0 1px $Dark-Shade-50;
+}
+.text-content{
+  @extend %text-content;
+}

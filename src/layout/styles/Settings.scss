@@ -1,4 +1,4 @@
-//colors setting
+//setting default
 $Dark-Shade-100: #1F2041;
 $Dark-Shade-75: rgba(31, 32, 65, 0.75);
 $Dark-Shade-50: rgba(31, 32, 65, 0.5);
@@ -8,35 +8,10 @@ $Purple: #BC9CFF;
 $Green: #6FCF97;
 $Montserrat: 'Montserrat', sans-serif;
 $Quicksand: 'Quicksand', sans-serif;
-%text-content{
-  margin: 0;
-  font-family: $Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $Dark-Shade-50;
-  transition: text-shadow .3s;
-  cursor: pointer;
-}
-%for-btn{
-  font-family: $Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  appearance: none;
-  align-items: center;
-  border: none;
-}
-%input-gradient{
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-}
-
+$Gradient: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+@import "btn";
+@import "text-content";
+@import "inputs";
 body{
   background: antiquewhite;
   font-family: $Montserrat;
@@ -47,7 +22,6 @@ body{
   color: $Dark-Shade-75;
   margin: 0;
   padding: 0;
-
 }
 a {
   text-decoration: none;
@@ -61,88 +35,10 @@ ul{
 li{
   list-style-type: none;
   margin: 0;
-  padding: 0;}
-.h1{
-  font-family: $Quicksand;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  margin: 0;
-  color: $Dark-Shade-100;
-  cursor: pointer;
-}
-.h2{
-  font-family: $Quicksand;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  margin: 0;
-  color: $Dark-Shade-100;
-  cursor: pointer;
-}
-.h3{
-  font-family: $Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  margin: 0;
-  color: $Dark-Shade-100;
-  cursor: pointer;
-}
-.p{
-  @extend %text-content;
-}
-  .p:hover{
-    text-shadow: 0 0 1px $Dark-Shade-50, 0 0 1px $Dark-Shade-50;
-  }
-.text-content{
-  @extend %text-content;
+  padding: 0;
 }
 
-.btn{
-  @extend %for-btn;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
-  color: #FFFFFF;
-  border: 0;
-  width: 100%; //Ширина кнопки
-}
-.btn-void{
-  @extend %for-btn;
-  border-radius: 22px;
-  color: $Purple;
-  background-color: #FFFFFF;
-  outline: 2px solid $Purple;
-  padding-left: 20px;
-  padding-right: 20px;
-  outline-offset: -2px;
-}
-.btn-void:hover{
-  background-color: $Purple;
-  outline: 2px solid rgba(255, 255, 255, 0.55);
-  color: #FFFFFF;
-}
-.btn:hover{
-  background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
-  &-void{
-
-  }
-}
 .fas{
   font-size: 11px;
   padding-left: 3px;
-}
-.input{
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  @extend %text-content;
-  &-btn{
-
-  }
 }
