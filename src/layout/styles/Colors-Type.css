@@ -40,7 +40,7 @@
   border: none;
 }
 
-.input, .text-content-b, .text-content, .p {
+.input-group, .text-content-b, .text-content, .p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -96,12 +96,26 @@
   text-transform: uppercase;
 }
 
-.input {
+.input-group {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
+.input-group__input {
+  background-color: white;
+  border: none;
+  padding: 10px 0 10px 15px;
+}
+.input-group__btn {
+  background-color: white;
+  border: none;
+  padding: 10px 15px 10px 0;
+}
+
 body {
   background: antiquewhite;
   font-family: "Montserrat", sans-serif;
