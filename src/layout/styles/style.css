@@ -99,21 +99,29 @@
 .input-group {
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 4px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
 }
 .input-group__input {
   background-color: white;
   border: none;
   padding: 10px 0 10px 15px;
+  width: 100%;
 }
 .input-group__btn {
   background-color: white;
+  margin-left: 0;
   border: none;
   padding: 10px 15px 10px 0;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #BC9CFF;
 }
 
 body {
@@ -147,7 +155,6 @@ li {
 }
 
 .fas {
-  font-size: 11px;
   padding-left: 3px;
 }
 
