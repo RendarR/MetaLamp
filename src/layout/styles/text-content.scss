@@ -1,4 +1,4 @@
-%text-content{
+%text-content,.p{
   margin: 0;
   font-family: $Montserrat;
   font-style: normal;
@@ -40,12 +40,15 @@
   color: $Dark-Shade-100;
   cursor: pointer;
 }
-.p{
-  @extend %text-content;
-}
 .p:hover{
   text-shadow: 0 0 1px $Dark-Shade-50, 0 0 1px $Dark-Shade-50;
 }
 .text-content{
   @extend %text-content;
+}
+.text-content-b{
+  @extend %text-content;
+  font-weight: bold;
+  color: $Dark-Shade-100;
+  text-transform: uppercase;
 }
