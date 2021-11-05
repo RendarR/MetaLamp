@@ -1,0 +1,82 @@
+@import "setting";
+@import "text";
+%input-gradient{
+  color: $Gradient;
+}
+.input-group{
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  display: flex;
+  @extend %text-content;
+  &__input{
+    background-color: white;
+    border: none;
+    padding:10px 0 10px 15px;
+    width: 100%;
+  }
+  &__btn{
+    margin-left: 0;
+    border: none;
+    padding:10px 15px 10px 0;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: $Gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.form-text-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs{
+  &-all{
+
+  }
+  &-email{
+
+  }
+  &-text{
+
+  }
+  &-dropdown{
+
+  }
+  &-data{
+
+  }
+}
+
+
+.fas{
+  padding-left: 3px;
+  &-arrow-size{
+    font-size: 24px;
+    font-weight: normal;
+    &:hover{
+      color: $Purple;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: $Purple;
+    }
+  }
+}
+.fab{
+  font-size: 24px;
+  line-height: 23px;
+  background: $Gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover{
+    color: $Purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: $Purple;
+  }
+}

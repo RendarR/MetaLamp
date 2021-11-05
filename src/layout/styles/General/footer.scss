@@ -1,0 +1,27 @@
+@import "setting";
+.footer{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 140px 100px 140px;
+  &-left{
+    margin: 0 0 auto 0;
+    width: 260px;
+  }
+  &__ul{
+    margin: 0 auto 0 auto;
+  }
+  &__ul:last-child{
+    margin-right: 10px;
+  }
+  &__li{
+    padding: 10px 0 10px 0;
+  }
+  &-subscribe{
+    align-content: center;
+    width: 260px;
+    &__p{
+      padding: 20px 0 20px 0;
+    }
+  }
+}

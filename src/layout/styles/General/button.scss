@@ -1,42 +1,40 @@
+@import "setting";
 .btn{
   @extend %for-btn;
-  background: $Gradient;
-  border-radius: 22px;
   color: #FFFFFF;
-  border: 0;
   width: 100%; //Ширина кнопки
+  background: $Gradient;
 }
 .btn-void{
   @extend %for-btn;
-  border-radius: 22px;
-  color: $Purple;
-  background-color: #FFFFFF;
-  outline: 2px solid $Purple;
   padding-left: 20px;
   padding-right: 20px;
   outline-offset: -2px;
+  background: transparent;
+  outline: 2px solid $Purple ;
+  //border-image: $Gradient;
+  //border-image-slice: 1;
+  background: $Gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .btn-void:hover{
-  background-color: $Purple;
-  outline: 2px solid rgba(255, 255, 255, 0.55);
-  color: #FFFFFF;
+  background: $Gradient;
+  -webkit-text-fill-color: white;
 }
 .btn:hover{
   background: $Revers-Gradient;
-  &-void{
-  }
+
 }
 %for-btn{
   font-family: $Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  appearance: none;
+  padding: 10px 20px;
   align-items: center;
-  border: none;
+  border-radius: 22px 22px 22px 22px;
+  border: 0;
 }

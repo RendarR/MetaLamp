@@ -1,0 +1,46 @@
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        title= "UIKIT"
+        link(rel='stylesheet', href='../../src/layout/styles/main.css')
+        link(rel='stylesheet', href='../../src/layout/styles/UIkit/FormElements.css')
+        script(src='https://kit.fontawesome.com/1f5bf3a5b9.js', crossorigin="anonymous")
+    body
+        div.inputs
+            div.inputs_block
+                div(class=['inputs-all','all-inputs-email'])
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputEmail1") Text Field
+                        p.text-content-u Default
+                    form(class=['input-group'])
+                        input(type='email', class='input-group', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Email')
+                div(class=['inputs-all','all-inputs-text'])
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputEmail1") Text Field
+                        p.text-content-u Hover / Focus
+                    form(class=['input-group'])
+                        input(type='text', class='input-group', id='exampleInputFocus', aria-describedby='emailHelp', placeholder='This is pretty awesome')
+                div(class=['inputs-all', 'all-inputs-dropdown'])
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputDropdown") Text Field
+                        p.text-content-u Hover / Focus
+                    form(class=['input-group'])
+                        select(class='input-group', id='exampleInputDropDown', aria-describedby='emailHelp', aria-label="Пример выбора по умолчанию")
+                div(class=['inputs-all', 'all-inputs-date'])
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputDropdown") masked text field
+                        p.text-content-u Default
+                    form(class=['input-group'])
+                        input(class=['input-group','text-content'], id='exampleInputDate', type='date', value='ДД.ММ.ГГ')
+                div(class=['inputs-all', 'all-inputs-date-dropdown'])
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputDropdown") masked text field
+                        p.text-content-u Default
+                    form(class=['input-group'])
+                        select(class=['input-group', 'text-content'], id='exampleInputDateDropdown1', type='date', value='ДД.ММ.ГГ')
+                    div(class=['form-text-top'])
+                        label(class=['h3'] for="exampleInputDropdown") masked text field
+                        p.text-content-u Default
+                    form(class=['input-group'])
+                        select(class=['input-group', 'text-content'], id='exampleInputDateDropdown2', type='date', value='ДД.ММ.ГГ')
+

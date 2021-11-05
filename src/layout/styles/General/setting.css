@@ -1,0 +1,40 @@
+body {
+  background: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fas {
+  padding-left: 3px;
+}
+.fas-arrow-size {
+  font-size: 14px;
+  width: 10px;
+  height: 10px;
+}
+
+/*# sourceMappingURL=setting.css.map */

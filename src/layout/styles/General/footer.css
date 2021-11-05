@@ -1,0 +1,23 @@
+/* Error: This file is already being loaded.
+ *   ,--> copyright.scss
+ * 1 | @import "../General/index";
+ *   |         ^^^^^^^^^^^^^^^^^^ new load
+ *   '
+ *   ,--> footer.scss
+ * 1 | @import "../General/index";
+ *   |         ================== original load
+ *   '
+ *   copyright.scss 1:9  @import
+ *   index.scss 4:9      @import
+ *   footer.scss 1:9     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: This file is already being loaded.\a   \250c \2500 \2500 > copyright.scss\a 1 \2502  @import "../General/index";\d\a   \2502          ^^^^^^^^^^^^^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > footer.scss\a 1 \2502  @import "../General/index";\d\a   \2502          \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   copyright.scss 1:9  @import\a   index.scss 4:9      @import\a   footer.scss 1:9     root stylesheet';
+}

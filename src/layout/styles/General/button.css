@@ -1,0 +1,80 @@
+body {
+  background: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fas {
+  padding-left: 3px;
+}
+.fas-arrow-size {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.btn {
+  background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+  border-radius: 22px 22px 22px 22px;
+  color: #FFFFFF;
+  border: 0;
+  width: 100%;
+}
+
+.btn-void {
+  padding-left: 20px;
+  padding-right: 20px;
+  outline-offset: -2px;
+  background: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid transparent;
+  border-image: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
+  border-image-slice: 1;
+}
+
+.btn-void:hover {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-text-fill-color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.btn, .btn-void {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  appearance: none;
+  align-items: center;
+}
+
+/*# sourceMappingURL=button.css.map */
