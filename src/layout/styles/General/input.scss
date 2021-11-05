@@ -8,6 +8,7 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   display: flex;
+  width: 100%;
   @extend %text-content;
   &__input{
     background-color: white;
@@ -35,27 +36,8 @@
 .form-text-top{
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
-
-.inputs{
-  &-all{
-
-  }
-  &-email{
-
-  }
-  &-text{
-
-  }
-  &-dropdown{
-
-  }
-  &-data{
-
-  }
-}
-
-
 .fas{
   padding-left: 3px;
   &-arrow-size{
