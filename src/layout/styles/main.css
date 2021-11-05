@@ -189,12 +189,20 @@ li {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   display: flex;
+  width: 100%;
 }
 .input-group__input {
   background-color: white;
   border: none;
   padding: 10px 0 10px 15px;
   width: 100%;
+}
+.input-group-flex {
+  display: flex;
+}
+.input-group-box {
+  display: block;
+  padding: 10px;
 }
 .input-group__btn {
   margin-left: 0;
@@ -216,6 +224,7 @@ li {
 .form-text-top {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .fas {

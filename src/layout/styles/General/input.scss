@@ -16,6 +16,13 @@
     padding:10px 0 10px 15px;
     width: 100%;
   }
+  &-flex{
+    display: flex;
+  }
+  &-box{
+    display: block;
+    padding: 10px;
+  }
   &__btn{
     margin-left: 0;
     border: none;
@@ -33,7 +40,7 @@
     -webkit-text-fill-color: transparent;
   }
 }
-.form-text-top{
+.form-text-top{ //Для input group
   display: flex;
   justify-content: space-between;
   align-items: baseline;

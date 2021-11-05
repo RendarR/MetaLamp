@@ -8,39 +8,44 @@ html(lang="ru")
     body
         div.inputs
             div.inputs_block
-                div(class=['inputs-all','all-inputs-email'])
+                div(class=['inputs-all', 'input-group-box'])
                     div(class=['form-text-top'])
                         label(class=['h3'] for="exampleInputEmail1") Text Field
-                        p.text-content-u Default
+                        div.text-content-u Default
                     form(class=['input-group'])
-                        input(type='email', class='input-group', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Email')
-                div(class=['inputs-all','all-inputs-text'])
+                        input(type='email', class='input-group__input', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Email') //
+                div(class=['inputs-all', 'input-group-box'])
                     div(class=['form-text-top'])
                         label(class=['h3'] for="exampleInputEmail1") Text Field
-                        p.text-content-u Hover / Focus
+                        div.text-content-u Hover / Focus
                     form(class=['input-group'])
-                        input(type='text', class='input-group', id='exampleInputFocus', aria-describedby='emailHelp', placeholder='This is pretty awesome')
-                div(class=['inputs-all', 'all-inputs-dropdown'])
+                        input(type='text', class='input-group__input', id='exampleInputFocus', aria-describedby='emailHelp', placeholder='This is pretty awesome')
+                div(class=['inputs-all', 'input-group-box'])
                     div(class=['form-text-top'])
-                        label(class=['h3'] for="exampleInputDropdown") Text Field
-                        p.text-content-u Hover / Focus
+                        label(class=['h3'] for="exampleInputDropdown") Dropdown
                     form(class=['input-group'])
-                        select(class='input-group', id='exampleInputDropDown', aria-describedby='emailHelp', aria-label="Пример выбора по умолчанию")
-                div(class=['inputs-all', 'all-inputs-date'])
-                    div(class=['form-text-top'])
-                        label(class=['h3'] for="exampleInputDropdown") masked text field
-                        p.text-content-u Default
-                    form(class=['input-group'])
-                        input(class=['input-group','text-content'], id='exampleInputDate', type='date', value='ДД.ММ.ГГ')
-                div(class=['inputs-all', 'all-inputs-date-dropdown'])
+                        select(class='input-group__input', id='exampleInputDropDown', aria-describedby='emailHelp', aria-label="Пример выбора по умолчанию")
+                div(class=['inputs-all', 'input-group-box'])
                     div(class=['form-text-top'])
                         label(class=['h3'] for="exampleInputDropdown") masked text field
-                        p.text-content-u Default
+                        div.text-content-u Default
                     form(class=['input-group'])
-                        select(class=['input-group', 'text-content'], id='exampleInputDateDropdown1', type='date', value='ДД.ММ.ГГ')
+                        input(class=['input-group__input','text-content'], id='exampleInputDate', type='date', value='ДД.ММ.ГГ')
+                div(class=['inputs-all', 'input-group-flex'])
+                    div.input-group-box
+                        div(class=['form-text-top'])
+                            label(class=['h3'] for="exampleInputDropdown") date Dropdown
+                        form(class=['input-group'])
+                            select(class=['input-group__input', 'text-content'], id='exampleInputDateDropdown1', type='text', value='ДД.ММ.ГГ')
+                    div.input-group-box
+                        div(class=['form-text-top'])
+                            label(class=['h3'] for="exampleInputDropdown") date Dropdown
+                        form(class=['input-group'])
+                            select(class=['input-group__input', 'text-content'], id='exampleInputDateDropdown2', type='text', value='ДД.ММ.ГГ')
+                div(class=['inputs-all', 'input-group-box'])
                     div(class=['form-text-top'])
-                        label(class=['h3'] for="exampleInputDropdown") masked text field
-                        p.text-content-u Default
+                        label(class=['h3'] for="exampleInputDropdown") filter date dropdown
                     form(class=['input-group'])
-                        select(class=['input-group', 'text-content'], id='exampleInputDateDropdown2', type='date', value='ДД.ММ.ГГ')
-
+                        input(class=['input-group__input','text-content'], id='FilterDateDropdown', type='email', placeholder='Email')
+                        button(class=["input-group__btn"], type="button" id="button-addon2")
+                            i(class=['fas-arrow-size', 'fas', 'fa-arrow-right'])
