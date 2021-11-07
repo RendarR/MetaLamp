@@ -21,6 +21,10 @@ body{
   margin: 0;
   padding: 0;
 }
+.conteiner{
+  margin: 0 auto;
+  padding: 0 140px;
+}
 a {
   text-decoration: none;
   margin: 0;
@@ -34,4 +38,11 @@ li{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 1440px) {
+  .conteiner{
+    max-width: 970px;
+  }
+  
 }

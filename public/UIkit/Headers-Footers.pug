@@ -5,7 +5,7 @@ html(lang="ru")
         link(rel='stylesheet', href='../../src/layout/styles/main.css')
         script(src='https://kit.fontawesome.com/1f5bf3a5b9.js', crossorigin="anonymous")
     body
-        nav.navbar
+        nav.navbar.conteiner
             a.navbar-brand(href='')
                 img.navbar-brand__logo(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
                 div.h2 TOXIN
@@ -33,7 +33,7 @@ html(lang="ru")
                 button(class=['btn-void','navbar-log__button1']) Войти
                 button(class=['btn','navbar-log__button2']) Зарегистрироваться
 
-        nav(class='navbar', style='margin-top:40px')
+        nav(class=['navbar','conteiner'], style='margin-top:40px')
             a.navbar-brand(href='')
                 img.navbar-brand__logo(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
                 div.h2 TOXIN
@@ -59,38 +59,39 @@ html(lang="ru")
                         li(class=['p', 'navbar-nav__li']) Соглашения 4
             div.navbar-log
                 a(class=['p', 'navbar-nav__item','navbar-log-user']) Юлий Цезарь
-
         footer(class='footer', style='margin-top:40px')
-            div.footer-left
-                a.brand(href='')
-                    img.navbar-brand__logo(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
-                    div.h2 TOXIN
-                div.text-content Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-            ul(class=['footer__ul'])
-                li(class=['h3']) Навигация
-                li(class=['p','footer__li']) О нас
-                li(class=['p','footer__li']) Новости
-                li(class=['p','footer__li']) Служба поддержки
-                li(class=['p','footer__li']) Услуги
-            ul(class=['footer__ul'])
-                li(class=['h3']) О нас
-                li(class=['p','footer__li']) О сервисе
-                li(class=['p','footer__li']) Наша команда
-                li(class=['p','footer__li']) Вакансии
-                li(class=['p','footer__li']) Инвесторы
-            ul(class=['footer__ul'])
-                li(class=['h3']) Служба поддержки
-                li(class=['p','footer__li']) Соглашения
-                li(class=['p','footer__li']) Сообщество
-                li(class=['p','footer__li']) Связь с нами
-            div.footer-subscribe
-                p.h3 Подписка
-                p(class=['text-content','footer-subscribe__p']) Получайте специальные предложения и новости сервиса
-                form.input-group
-                    input(class=['text-content','input-group__input'], placeholder="Email" aria-label="Поиск")
-                    button(class=["input-group__btn"], type="button" id="button-addon2")
-                        i(class=['fas-arrow-size','fas', 'fa-arrow-right'])
-        div(class=['copyright','copyright-line'], style='margin-top:1px')
+            .conteiner
+                .footer-block
+                    div.footer-left
+                        a.brand(href='')
+                            img.navbar-brand__logo(src='https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/BrandMain.png')
+                            div.h2 TOXIN
+                        div.text-content Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                    ul(class=['footer__ul'])
+                        li(class=['h3']) Навигация
+                        li(class=['p','footer__li']) О нас
+                        li(class=['p','footer__li']) Новости
+                        li(class=['p','footer__li']) Служба поддержки
+                        li(class=['p','footer__li']) Услуги
+                    ul(class=['footer__ul'])
+                        li(class=['h3']) О нас
+                        li(class=['p','footer__li']) О сервисе
+                        li(class=['p','footer__li']) Наша команда
+                        li(class=['p','footer__li']) Вакансии
+                        li(class=['p','footer__li']) Инвесторы
+                    ul(class=['footer__ul'])
+                        li(class=['h3']) Служба поддержки
+                        li(class=['p','footer__li']) Соглашения
+                        li(class=['p','footer__li']) Сообщество
+                        li(class=['p','footer__li']) Связь с нами
+                    div.footer-subscribe
+                        p.h3 Подписка
+                        p(class=['text-content','footer-subscribe__p']) Получайте специальные предложения и новости сервиса
+                        form.input-group
+                            input(class=['text-content','input-group__input'], placeholder="Email" aria-label="Поиск")
+                            button(class=["input-group__btn"], type="button" id="button-addon2")
+                                i(class=['fas-arrow-size','fas', 'fa-arrow-right'])
+        div(class=['copyright','copyright-line','conteiner'], style='margin-top:1px')
                 div.copyright-p
                     p.text-content Copyright © 2018 Toxin отель. Все права зачищены.
                 ul.copyright-ul

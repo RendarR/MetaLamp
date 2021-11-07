@@ -1,9 +1,11 @@
 @import "setting";
 .footer{
   background-color: #FFFFFF;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 140px 100px 140px;
+  &-block{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+  }
   &-left{
     margin: 0 0 auto 0;
     width: 260px;
