@@ -1,6 +1,7 @@
 html(lang="ru")
     head
         meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width")
         title= "UIKIT"
         link(rel='stylesheet', href='../../src/layout/styles/main.css')
         script(src='https://kit.fontawesome.com/1f5bf3a5b9.js', crossorigin="anonymous")
@@ -59,8 +60,8 @@ html(lang="ru")
                         li(class=['p', 'navbar-nav__li']) Соглашения 4
             div.navbar-log
                 a(class=['p', 'navbar-nav__item','navbar-log-user']) Юлий Цезарь
-        footer(class='footer', style='margin-top:40px')
-            .conteiner
+        footer(class=[  'footer','conteiner'], style='margin-top:40px')
+
                 .footer-block
                     div.footer-left
                         a.brand(href='')
@@ -114,3 +115,4 @@ html(lang="ru")
                         i(class=['fab', 'fa-twitter'])
                     li.copyright-li
                         i(class=['fab', 'fa-facebook-square'])
+

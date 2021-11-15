@@ -3,6 +3,9 @@
 %input-gradient{
   color: $Gradient;
 }
+input::-webkit-calendar-picker-indicator{
+  display: none;
+}
 .input-group{
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -13,6 +16,7 @@
   &__input{
     background-color: white;
     border: none;
+    margin-right: 10px;
     padding:10px 0 10px 15px;
     width: 100%;
   }
@@ -26,7 +30,7 @@
   &__btn{
     margin-left: 0;
     border: none;
-    padding:10px 15px 10px 0;
+    padding:10px 10px 10px 0;
     font-family: Material Icons;
     font-style: normal;
     font-weight: lighter;

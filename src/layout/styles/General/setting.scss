@@ -21,10 +21,6 @@ body{
   margin: 0;
   padding: 0;
 }
-.conteiner{
-  margin: 0 auto;
-  padding: 0 140px;
-}
 a {
   text-decoration: none;
   margin: 0;
@@ -39,10 +35,41 @@ li{
   margin: 0;
   padding: 0;
 }
+//Создание медиазапросов для адаптивности
+.conteiner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
 
-@media (max-width: 1440px) {
+/*
+@media (max-width: 1200px) { //Маленькие мониторы
   .conteiner{
     max-width: 970px;
   }
-  
 }
+@media (max-width: 992px) { //Планшет
+  .conteiner{
+    max-width: 992px;
+  }
+}
+@media (max-width: 767px) {
+  .conteiner{
+    max-width: none;
+  }
+}
+@media all{} //Для всех типов устройств
+@media print{} //Для документов предварительного просмотра на печать
+@media scrin{} //Для цветных мониторов компа
+@media speech{} //Для разл синтезаторов речи
+@media (orientation: portrait) {} //Ориентация в альбом\портрет
+@media (resolution: 2600dpi){} //Зависимость от разрешения экранов
+@media (monochrome){} //Когда на чб экране
+@media (max-width: 1200px){ //Классический брэйкПоинт Максимальные\минимальные широты\высоты. Применение будет происходить при зщначении максимальной ширины контента в 1200пх
+  .conteiner{
+    max-width: none;
+  }
+
+}
+*/
+

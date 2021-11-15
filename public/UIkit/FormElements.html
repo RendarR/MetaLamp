@@ -1,1 +1,102 @@
-<html lang="ru"><head><meta charset="utf-8"/><title>UIKIT</title><link rel="stylesheet" href="../../src/layout/styles/main.css"/><link rel="stylesheet" href="../../src/layout/styles/UIkit/FormElements.css"/><script src="https://kit.fontawesome.com/1f5bf3a5b9.js" crossorigin="anonymous"></script></head><body><div class="inputs"><div class="inputs_block"><div class="inputs-all input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputEmail1">Text Field</label><div class="text-content-u">Default</div></div><form class="input-group"><input class="input-group__input" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/></form></div><div class="inputs-all input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputEmail1">Text Field</label><div class="text-content-u">Hover / Focus</div></div><form class="input-group"><input class="input-group__input" type="text" id="exampleInputFocus" aria-describedby="emailHelp" placeholder="This is pretty awesome"/></form></div><div class="inputs-all input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputDropdown">Dropdown</label></div><form class="input-group"><select class="input-group__input" id="exampleInputDropDown" aria-describedby="emailHelp" aria-label="Пример выбора по умолчанию"></select></form></div><div class="inputs-all input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputDropdown">masked text field</label><div class="text-content-u">Default</div></div><form class="input-group"><input class="input-group__input text-content" id="exampleInputDate" type="date" value="ДД.ММ.ГГ"/></form></div><div class="inputs-all input-group-flex"><div class="input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputDropdown">date Dropdown</label></div><form class="input-group"><select class="input-group__input text-content" id="exampleInputDateDropdown1" type="text" value="ДД.ММ.ГГ"></select></form></div><div class="input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputDropdown">date Dropdown</label></div><form class="input-group"><select class="input-group__input text-content" id="exampleInputDateDropdown2" type="text" value="ДД.ММ.ГГ"></select></form></div></div><div class="inputs-all input-group-box"><div class="form-text-top"><label class="h3" for="exampleInputDropdown">filter date dropdown</label></div><form class="input-group"><input class="input-group__input text-content" id="FilterDateDropdown" type="email" placeholder="Email"/><button class="input-group__btn" type="button" id="button-addon2"><i class="fas-arrow-size fas fa-arrow-right"></i></button></form></div></div></div></body></html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>UIKIT</title>
+    <link rel="stylesheet" href="../../src/layout/styles/main.css"/>
+    <link rel="stylesheet" href="../../src/layout/styles/UIkit/FormElements.css"/>
+    <script src="https://kit.fontawesome.com/1f5bf3a5b9.js" crossorigin="anonymous"></script>
+    <script src="../../src/components/index.js"></script>
+  </head>
+  <body>
+    <div class="inputs" style="display:flex">
+      <div class="inputs_block">
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputEmail1">Text Field</label>
+              <div class="text-content-u">Default</div>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"/>
+            </div>
+          </div>
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputEmail1">Text Field</label>
+              <div class="text-content-u">Hover / Focus</div>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input" type="text" id="exampleInputFocus" aria-describedby="emailHelp" value="This is pretty awesome"/>
+            </div>
+          </div>
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputDropdown">Dropdown</label>
+              <div class="text-content-u">Default</div>
+            </div>
+            <div class="input-group">
+              <select class="input-group__input" id="exampleInputDropDown" aria-describedby="emailHelp" aria-label="Пример выбора по умолчанию" content="Сколько гостей">
+                <option disabled="disabled" selected="selected">Сколько гостей</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputDropdown">masked text field</label>
+              <div class="text-content-u">Default</div>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input text-content-data" id="exampleInputDate" type="date" value="ДД.ММ.ГГ"/>
+            </div>
+          </div>
+          <div class="inputs-all input-group-flex">
+            <div class="input-group-box">
+              <div class="form-text-top">
+                <label class="h3" for="exampleInputDropdown">date Dropdown</label>
+              </div>
+              <div class="input-group">
+                <select class="input-group__input text-content" id="exampleInputDateDropdown1" type="text" value="ДД.ММ.ГГ"></select>
+              </div>
+            </div>
+            <div class="input-group-box">
+              <div class="form-text-top">
+                <label class="h3" for="exampleInputDropdown">date Dropdown</label>
+              </div>
+              <div class="input-group">
+                <select class="input-group__input text-content" id="exampleInputDateDropdown2" type="text" value="ДД.ММ.ГГ"></select>
+              </div>
+            </div>
+          </div>
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputDropdown">filter date dropdown</label>
+            </div>
+            <div class="input-group">
+              <input class="input-group__input text-content" id="FilterDateDropdown" type="email" placeholder="Email"/>
+              <button class="input-group__btn" type="button" id="button-addon2"><i class="fas-arrow-size fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="inputs_block">
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <div class="inputs-all input-group-box">
+            <div class="form-text-top">
+              <label class="h3" for="exampleInputEmail1">Checkbox Buttons</label>
+            </div>
+            <div class="checkbox-group">
+              <input class="inputs-all" type="checkbox" name="myCheckbox"/>
+              <label class="text-content">Можно курить</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
