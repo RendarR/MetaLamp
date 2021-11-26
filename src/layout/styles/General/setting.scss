@@ -10,6 +10,7 @@ $Montserrat: 'Montserrat', sans-serif;
 $Quicksand: 'Quicksand', sans-serif;
 $Gradient: linear-gradient(180deg, #8BA4F9 0%, #BC9CFF 100%);
 $Revers-Gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
 body{
   background: gainsboro;
   font-family: $Montserrat;
@@ -41,7 +42,33 @@ li{
   margin: 0 auto;
   padding: 0 140px;
 }
-
+.block{
+  display: block;
+  &-320{
+    display: block;
+    width: 320px;
+  }
+  &-267{
+    display: block;
+    width: 267px;
+  }
+  &-row{
+    display: flex;
+    flex-direction: row;
+    &-sb{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &-column{
+    display: flex;
+    flex-direction: column;
+  }
+  &-flex{
+    display: flex;
+  }
+}
 /*
 @media (max-width: 1200px) { //Маленькие мониторы
   .conteiner{

@@ -1,20 +1,9 @@
 @import "../General/setting";
-.inputs{
+.inputs {
   padding: 140px;
   background: #FFFFFF;
-  &-all{
-
-  }
-  &-email{
-
-  }
-  &-text{
-
-  }
-  &-dropdown{
-
-  }
-  &-data{
-
+  display: flex;
+  justify-content: space-between;
+  &__block{
   }
 }

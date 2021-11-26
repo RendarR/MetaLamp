@@ -11,6 +11,7 @@
   cursor: pointer;
 }
 .h1{
+  transform: scale(1, 0.9);
   font-family: $Quicksand;
   font-style: normal;
   font-weight: bold;
@@ -21,6 +22,7 @@
   cursor: pointer;
 }
 .h2{
+  transform: scale(1, 0.9);
   font-family: $Quicksand;
   font-style: normal;
   font-weight: normal;
@@ -31,6 +33,7 @@
   cursor: pointer;
 }
 .h3{
+  transform: scale(1, 0.9);
   margin: 0;
   font-family: $Montserrat;
   font-style: normal;
@@ -41,7 +44,6 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $Dark-Shade-100;
-
 }
 .p:hover{
   text-shadow: 0 0 1px $Dark-Shade-50, 0 0 1px $Dark-Shade-50;
@@ -57,6 +59,8 @@
     @extend %text-content;
     text-transform: uppercase;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 14px;
+    color:$Dark-Shade-25;
+    height: 44px;
   }
 }

@@ -7,62 +7,91 @@ html(lang="ru")
         link(rel='stylesheet', href='../../src/layout/styles/UIkit/FormElements.css')
         script(src='https://kit.fontawesome.com/1f5bf3a5b9.js', crossorigin="anonymous")
         script(src="../../src/components/index.js")
+        link(rel = "preconnect", href = "https://fonts.googleapis.com")
+        link(rel = "preconnect", href = "https://fonts.gstatic.com" crossorigin)
+        link(href = "https: //fonts.googleapis.com/css2? family = Montserrat: wght @ 100 & display = swap ",rel =" stylesheet ")
     body
-        div(class="inputs", style="display:flex")
-            div.inputs_block
+        div(class=['block-flex', 'inputs'])
+            div.block-320
                 form(class="form", action="#", method="post", enctype="multipart/form-data")
-                    div(class=['inputs-all', 'input-group-box'])
+                    div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for="exampleInputEmail1") Text Field
                             div.text-content-u Default
-                        div(class=['input-group'])
-                            input(type='email', class='input-group__input', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Email')
-                    div(class=['inputs-all', 'input-group-box'])
+                        div(class=['input-input'])
+                            input(type='email', class='input-input__input', id='exampleInputEmail1', aria-describedby='emailHelp', placeholder='Email')
+                    div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for="exampleInputEmail1") Text Field
                             div.text-content-u Hover / Focus
-                        div(class=['input-group'])
-                            input(type='text', class='input-group__input', id='exampleInputFocus', aria-describedby='emailHelp', value='This is pretty awesome')
-                    div(class=['inputs-all', 'input-group-box'])
+                        div(class=['input-input'])
+                            input(type='text', class='input-input__input', id='exampleInputFocus', aria-describedby='emailHelp', value='This is pretty awesome')
+                    div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for="exampleInputDropdown") Dropdown
-                            div.text-content-u Default
-                        div(class=['input-group'])
-                            select(class='input-group__input' id='exampleInputDropDown' aria-describedby='emailHelp' aria-label="Пример выбора по умолчанию" content="Сколько гостей")
+                        div(class=['input-input'])
+                            select(class='input-input__input-dropdown' id='exampleInputDropDown' aria-describedby='emailHelp' aria-label="Пример выбора по умолчанию" content="Сколько гостей")
                                 option(disabled, selected) Сколько гостей
                                 option(value="1") 1
                                 option(value="2") 2
                                 option(value="3") 3
                                 option(value="4") 4
-                    div(class=['inputs-all', 'input-group-box'])
+                    div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for="exampleInputDropdown") masked text field
-                            div.text-content-u Default
-                        div(class=['input-group'])
-                            input(class=['input-group__input','text-content-data'], id='exampleInputDate', type='date', value='ДД.ММ.ГГ')
-                    div(class=['inputs-all', 'input-group-flex'])
-                        div.input-group-box
+                        div(class=['input-input'])
+                            input(class=['input-input__input','text-content-data'], id='exampleInputDate', type='date', value='ДД.ММ.ГГ')
+                    div(class=['block-row-sb', 'input-block'])
+                        div.block-column
                             div(class=['form-text-top'])
                                 label(class=['h3'] for="exampleInputDropdown") date Dropdown
-                            div(class=['input-group'])
-                                select(class=['input-group__input', 'text-content'], id='exampleInputDateDropdown1', type='text', value='ДД.ММ.ГГ')
-                        div.input-group-box
+                            div(class=['input-input'])
+                                select(class=['input-input__input-dropdown'], id='exampleInputDateDropdown1', type='text', value='ДД.ММ.ГГ')
+                        div.block-column
                             div(class=['form-text-top'])
                                 label(class=['h3'] for="exampleInputDropdown") date Dropdown
-                            div(class=['input-group'])
-                                select(class=['input-group__input', 'text-content'], id='exampleInputDateDropdown2', type='text', value='ДД.ММ.ГГ')
-                    div(class=['inputs-all', 'input-group-box'])
+                            div(class=['input-input'])
+                                select(class=['input-input__input-dropdown'], id='exampleInputDateDropdown2', type='text', value='ДД.ММ.ГГ')
+                    div(class=['block-267','input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for="exampleInputDropdown") filter date dropdown
-                        div(class=['input-group'])
-                            input(class=['input-group__input','text-content'], id='FilterDateDropdown', type='email', placeholder='Email')
-                            button(class=['input-group__btn'], type="button" id='button-addon2')
+                        div(class=['input-input'])
+                            input(class=['input-input__input','text-content'], id='FilterDateDropdown', type='email', placeholder='Email')
+                            button(class=['input-input__btn'], type="button" id='button-addon2')
                                 i(class=['fas-arrow-size', 'fas', 'fa-arrow-right'])
-            div.inputs_block
+            div.block
                 form(class='form', action='#', method='post', enctype="multipart/form-data")
-                    div(class=['inputs-all', 'input-group-box'])
+                    div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for='exampleInputEmail1') Checkbox Buttons
-                        div(class=['checkbox-group'])
-                                input(class='inputs-all', type='checkbox' name='myCheckbox')
-                                label(class='text-content') Можно курить
+                        div(class=['block-column'])
+                            div(class=['checkbox-group'])
+                                input(class='checkbox-input', type='checkbox' name='myCheckbox' id="checkbox1" value="No")
+                                label(class='text-content' for="checkbox1") Можно курить
+                            div(class=['checkbox-group'])
+                                input(class='checkbox-input', type='checkbox' name='myCheckbox' id="checkbox2" value="No" checked)
+                                label(class='text-content' for="checkbox2") Можно с питомцами
+                            div(class=['checkbox-group'])
+                                input(class='checkbox-input', type='checkbox' name='myCheckbox' id="checkbox3" value="No" checked)
+                                label(class='text-content' for="checkbox3") Можно пригласить гостей (до 10 человек)
+                    div(class=['block', 'input-block'])
+                        div(class=['form-text-top'])
+                            label(class=['h3'] for='exampleInputEmail1') Checkbox Buttons
+                        div(class=['block-row'])
+                            div(class=['radio-group'])
+                                input(class='radio-input', type='radio' name='myRadio' id="radio1" value="Boy" checked)
+                                label(class='text-content' for="radio1") Мужчина
+                            div(class=['radio-group'])
+                                input(class='radio-input', type='radio' name='myRadio' id="radio2" value="Girl" disabled)
+                                label(class='text-content' for="radio2") Женщина
+                    div(class=['block', 'input-block'])
+                        div(class=['form-text-top'])
+                            label(class=['h3'] for='exampleInputEmail1') Toggle
+                        div(class=['block-column'])
+                            div(class=['radio-toggle'])
+                                input(class='radio-input', type='radio' name='myRadio' id="toggle1" value="Boy" checked)
+                                label(class='text-content' for="toggle1") Мужчина
+            div.block
+                form(class='form', action='#', method='post', enctype="multipart/form-data")
+            div.block
+                form(class='form' action='#' method='post' enctype="multipart/form-data")

@@ -6,43 +6,148 @@
 input::-webkit-calendar-picker-indicator{
   display: none;
 }
-.input-group{
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  display: flex;
-  width: 100%;
-  @extend %text-content;
-  &__input{
-    background-color: white;
-    border: none;
-    margin-right: 10px;
-    padding:10px 0 10px 15px;
+.input{ //Работа над стилизацией блока вводимых данных. продолжение ниже checkbox
+  &-block{
+    display: block;
+    padding: 10px 0;
+  }
+  &-input{
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    display: flex;
     width: 100%;
+    @extend %text-content;
+    &:focus{
+      border: 1px solid rgba(31, 32, 65, 0.5);
+    }
+    &:hover{
+      border: 1px solid rgba(31, 32, 65, 0.5);
+    }
+    &__input{
+      background-color: white;
+      border: none;
+      padding:10px 10px 10px 15px;
+      width: 100%;
+      color:$Dark-Shade-25;
+      &-dropdown{
+        background-color: white;
+        border: none;
+        padding:10px 10px 10px 15px;
+        width: 100%;
+        color:$Dark-Shade-75;
+        &::after{
+          width: 10px;
+        }
+      }
+    }
+    &__input:focus,&__input:hover{
+      color:$Dark-Shade-75;
+    }
+    &__btn{
+      margin-left: 0;
+      border: none;
+      padding:10px 10px 10px 10px;
+      font-family: Material Icons;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 24px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background: $Gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+.checkbox-input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  &+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    &::before{
+      content:"";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #adb5bd;
+      border-radius: 4px;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+  &:checked+label::before{
+    border-color: $Purple;
+    background-image: url("https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/Vector.png");
+    background-size: 50% 50%;
+  }
+}
+.checkbox-group{
+  margin: 5px 0;
+  &-column{
+    display: flex;
+    flex-direction: column;
   }
   &-flex{
     display: flex;
   }
-  &-box{
-    display: block;
-    padding: 10px;
+}
+.radio-group{
+    margin: 5px 0 0 20px;
+  &:first-child{
+    margin: 5px 0;
   }
-  &__btn{
-    margin-left: 0;
-    border: none;
-    padding:10px 10px 10px 0;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 24px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: $Gradient;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+}
+.radio-group input[type=radio] {
+  display: none;
+}
+.radio-group label{
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 32px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+.radio-group label:before {
+  content: "";
+  border-radius: 10px;
+  background: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  outline: 1px solid $Purple;
+}
+.radio-group input[type=radio]:checked + label:before {
+  background-image: url("https://raw.githubusercontent.com/RendarR/MetaLamp-Other/master/img/Radio.png");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:12px 12px;
+}
+/* Hover */
+.radio-group label:hover:before {
+  filter: brightness(120%);
+}
+/* Disabled */
+.radio-group input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.radio-toggle{
+
 }
 .form-text-top{ //Для input group
   display: flex;

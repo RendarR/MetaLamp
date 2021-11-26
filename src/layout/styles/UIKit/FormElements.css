@@ -35,6 +35,34 @@ li {
   padding: 0 140px;
 }
 
+.block {
+  display: block;
+}
+.block-320 {
+  display: block;
+  width: 320px;
+}
+.block-267 {
+  display: block;
+  width: 267px;
+}
+.block-row {
+  display: flex;
+  flex-direction: row;
+}
+.block-row-sb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.block-column {
+  display: flex;
+  flex-direction: column;
+}
+.block-flex {
+  display: flex;
+}
+
 /*
 @media (max-width: 1200px) { //Маленькие мониторы
   .conteiner{
@@ -68,6 +96,8 @@ li {
 .inputs {
   padding: 140px;
   background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=FormElements.css.map */
