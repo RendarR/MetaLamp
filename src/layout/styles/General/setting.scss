@@ -5,6 +5,7 @@ $Dark-Shade-50: rgba(31, 32, 65, 0.5);
 $Dark-Shade-25: rgba(31, 32, 65, 0.25);
 $Dark-Shade-5: rgba(31, 32, 65, 0.05);
 $Purple: #BC9CFF;
+$PurpleD: #854DFF;
 $Green: #6FCF97;
 $Montserrat: 'Montserrat', sans-serif;
 $Quicksand: 'Quicksand', sans-serif;
@@ -68,6 +69,14 @@ li{
   &-flex{
     display: flex;
   }
+}
+@-webkit-keyframes color_change-border {  // Анимация смены purple to purpleD
+  from { border-color: $Purple; }
+  to { border-color: $PurpleD; }
+}
+@-webkit-keyframes color_change-outline {  // Анимация смены purple to purpleD
+  from { outline: 1px solid $Purple; }
+  to { outline: 1px solid $PurpleD; }
 }
 /*
 @media (max-width: 1200px) { //Маленькие мониторы

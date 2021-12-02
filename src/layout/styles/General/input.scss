@@ -107,6 +107,13 @@ input::-webkit-calendar-picker-indicator{
     margin: 5px 0;
   }
 }
+/* Hover checkbox */
+.checkbox-group label:hover:before {
+  animation-name: color_change-border;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 .radio-group input[type=radio] {
   display: none;
 }
@@ -140,7 +147,10 @@ input::-webkit-calendar-picker-indicator{
 }
 /* Hover */
 .radio-group label:hover:before {
-  filter: brightness(120%);
+  animation-name: color_change-outline;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 /* Disabled */
 .radio-group input[type=radio]:disabled + label:before {

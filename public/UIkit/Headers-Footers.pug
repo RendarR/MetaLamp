@@ -88,10 +88,11 @@ html(lang="ru")
                     div.footer-subscribe
                         p.h3 Подписка
                         p(class=['text-content','footer-subscribe__p']) Получайте специальные предложения и новости сервиса
-                        form.input-group
-                            input(class=['text-content','input-group__input'], placeholder="Email" aria-label="Поиск")
-                            button(class=["input-group__btn"], type="button" id="button-addon2")
-                                i(class=['fas-arrow-size','fas', 'fa-arrow-right'])
+                        form.form
+                            div.input-input
+                                input(class=['text-content','input-input__input'], placeholder="Email" aria-label="Поиск")
+                                button(class=["input-input__btn"], type="button" id="button-addon2")
+                                    i(class=['fas-arrow-size','fas', 'fa-arrow-right'])
         div(class=['copyright','copyright-line','conteiner'], style='margin-top:1px')
                 div.copyright-p
                     p.text-content Copyright © 2018 Toxin отель. Все права зачищены.

@@ -82,15 +82,18 @@ html(lang="ru")
                                 input(class='radio-input', type='radio' name='myRadio' id="radio1" value="Boy" checked)
                                 label(class='text-content' for="radio1") Мужчина
                             div(class=['radio-group'])
-                                input(class='radio-input', type='radio' name='myRadio' id="radio2" value="Girl" disabled)
+                                input(class='radio-input', type='radio' name='myRadio' id="radio2" value="Girl" )
                                 label(class='text-content' for="radio2") Женщина
                     div(class=['block', 'input-block'])
                         div(class=['form-text-top'])
                             label(class=['h3'] for='exampleInputEmail1') Toggle
                         div(class=['block-column'])
                             div(class=['radio-toggle'])
-                                input(class='radio-input', type='radio' name='myRadio' id="toggle1" value="Boy" checked)
-                                label(class='text-content' for="toggle1") Мужчина
+                                input(class='radio-input', type='radio' name='myToggle' id="toggle1" value="Boy" checked)
+                                label(class='text-content' for="toggle1") Получать спецпредложения
+                            div(class=['radio-toggle'])
+                                input(class='radio-input', type='radio' name='myToggle' id="toggle2" value="Boy" disabled)
+                                label(class='text-content' for="toggle2") Получать спецпредложения
             div.block
                 form(class='form', action='#', method='post', enctype="multipart/form-data")
             div.block

@@ -63,6 +63,22 @@ li {
   display: flex;
 }
 
+@-webkit-keyframes color_change-border {
+  from {
+    border-color: #BC9CFF;
+  }
+  to {
+    border-color: #854DFF;
+  }
+}
+@-webkit-keyframes color_change-outline {
+  from {
+    outline: 1px solid #BC9CFF;
+  }
+  to {
+    outline: 1px solid #854DFF;
+  }
+}
 /*
 @media (max-width: 1200px) { //Маленькие мониторы
   .conteiner{
